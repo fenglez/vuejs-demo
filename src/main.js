@@ -10,3 +10,24 @@ new Vue({
   router,
   render: h => h(App)
 })
+
+var exampleData = {
+    message: 'Hello World!'
+}
+
+// 创建一个 Vue 实例或 "ViewModel"
+// 它连接 View 与 Model
+new Vue({
+    el: '#app1',
+    data: exampleData
+})
+
+var vm = new Vue({
+    el: '#app2',
+    data: {
+        yes: true,
+        no: true,
+        age: 28,
+        name: 'keepfool'
+    }
+})
